@@ -12,7 +12,7 @@
 	<artifactId>discovery-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>discovery-server</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Discovery Server</description>
 
 	<properties>
 		<java.version>11</java.version>
