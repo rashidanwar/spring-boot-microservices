@@ -20,7 +20,7 @@ public class MovieCatalogResource {
     }
 
     @GetMapping("/{userId}")
-    public List<CatalogItem> getCatalog(@PathVariable String userId) {
+    public List<CatalogItem> getCatalogs(@PathVariable String userId) {
         return movieCatalogService.getCatalogs(userId);
     }
 }
