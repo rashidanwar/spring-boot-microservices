@@ -1,5 +1,7 @@
 package io.javabrains.moviecatalogservice.model;
 
+import java.util.Objects;
+
 public class CatalogItem {
 
     private String name;
@@ -10,6 +12,9 @@ public class CatalogItem {
         this.name = name;
         this.desc = desc;
         this.rating = rating;
+    }
+
+    public CatalogItem() {
     }
 
     public String getName() {
@@ -34,5 +39,27 @@ public class CatalogItem {
 
     public void setRating(int rating) {
         this.rating = rating;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CatalogItem that = (CatalogItem) o;
+        return Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
+
+    @Override
+    public String toString() {
+        return "CatalogItem{" +
+                "name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                ", rating=" + rating +
+                '}';
     }
 }

@@ -1,0 +1,12 @@
+{
+  "userRating": [
+    {
+      "movieId": "550",
+      "rating": 4
+    },
+    {
+      "movieId": "551",
+      "rating": 5
+    }
+  ]
+}
